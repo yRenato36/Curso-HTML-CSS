@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte e pré-formatação</h2>
+    <!--<code> formata todas as letras do texto para o mesmo tamanho-->
+    <p>O comando <code> document.getElementsById('teste') </code> é escrito em JS</p>
+    
+    <!--<pre> coloca a formatação exatamente como está no código-fonte-->
+    <pre>
+        <code>
+    int num = 0;
+    Scanner ler = new Scanner(System.in);
+    num = ler.nextInt();
+    if(num > 10)
+        System.out.println("seu número" + num);
+    else
+        System.out.println("número menor que 10");
+        </code>
+    </pre>                  <!--<q> coloca aspas representação uma citação-->
+    <p>Estou criando uma citação de exemplo: <Q>citação muito importante.</Q></p>
+    
+    <!--<blockquote> destaca o texto em questão, cite, referencia durante a busca qual material foi tirado a citação-->
+    <blockquote cite="www.google.com">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Perspiciatis, totam? Quibusdam quae quod consectetur, 
+        veritatis eos dolorem a officiis molestias labore, deserunt, 
+        error harum adipisci soluta eum fugiat in sit.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Atualmente é muito utizado <abbr title="Sistema de erenciamento de Banco de Dados">SGBDs </abbr> 
+        para ter um controle do <abbr title="Data Base - Banco de Dados">DB</abbr>
+    </p>
+
+</body>
+</html>
