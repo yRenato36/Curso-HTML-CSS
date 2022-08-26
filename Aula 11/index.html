@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body>
+    <h1>Colocando áudios</h1>
+    <p>Clique no play para tocar</p>
+    <!-- modo mais simples, porém menos compatibilidade - comando para colocar áudios-->
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+    <br>
+    <p>segunda forma de colocar áudio</p>
+    <!--controls, adiciona os controles para áudio-->
+    <!--loop, ao final do áudio ele recomeça-->
+    <!--modo mais trabalhado, porém mais compatível-->
+    <audio preload="metadata" controls loop >
+        <!-- formatos para reprodução de áudios-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+    </audio>
+    
+    <h2>Importando vídeos - esses métodos consomem memória do server</h2>
+    <!-- modo mais simples, porém menos compatibilidade-->
+    <video controls poster="midia/limoes-capa.png" src="midia/meu-video.mp4" width="570"></video>    
+    <p>segunda forma de colocar áudio</p>
+    <!--poster, coloca uma capa no vídeo-->
+    <video controls poster="midia/limoes-capa.png" width="570">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+    </video>
+
+    <h2>Incorporando vídeo de outros provedores</h2>
+    <iframe width="570" height="315" src="https://www.youtube.com/embed/JdCPjv7ec1Y" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+</body>
+</html>
