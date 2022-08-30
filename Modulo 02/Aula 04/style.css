@@ -1,0 +1,47 @@
+/*importando fontes personalizadas*/
+@font-face {
+    font-family: 'Caligature';
+    src: url('fonts/Caligature Hunters.otf') format('opentype'), url('fonts/Caligature Hunters.ttf') format('truetype');
+    font-weight: normal;
+    font-size: small;
+
+    /*
+    tipos/extensão de format()
+        - opentype (otf)
+        - turetype (ttf)
+        - enbedded-opentype
+        - truetype-aat (apple advenced typography)
+    */
+}
+
+body {
+    /*shorthand - font*/
+    /*font-style -> font-weight -> font-size -> font-family*/
+    font: normal lighter 16px Arial, sans-serif;
+}
+
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 96, 96);
+    text-align: center;
+}
+/*utilizando*/
+p#mensagem {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Caligature', Times, serif; /*chamando a fonte importada*/
+    font-weight: lighter;
+    color: rgb(255, 176, 57);
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px; /*cria uma avanço de 20px em cada parágrafo*/
+}
+
+.subCor {
+    color: rgb(129, 129, 255);
+}
